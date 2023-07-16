@@ -298,6 +298,31 @@ footer{
         .navbar li a{
             color: #021859;
         }
+        footer{
+            background-color: orangered;
+            width: 100%;
+            height: 9.375rem;
+        }
+        .footer-estilo h2{
+            width: 100%;
+            align-self: end;
+            color: beige;
+            font-size: 20px;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            width: 100%;
+        }
+        .footer-estilo p{
+            font-size: 20px;
+            color: beige;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+        }
+        .footer-estilo h3{
+            color: beige;
+            font-size: 18px;
+            font-family: 'Poppins', sans-serif;
+        }
 
 }
 @media (max-width: 768px){
@@ -345,5 +370,29 @@ footer{
                     color: #021859;
                     font-size: small;
                 }
+                footer{
+                    background-color: orangered;
+                    width: 100%;
+                    height: 9.375rem;
+                }
+                .footer-estilo h2{
+                    width: 100%;
+                    align-self: center;
+                    color: beige;
+                    font-size: 20px;
+                    font-family: 'Poppins', sans-serif;
+                    text-align: center;
+                    width: 100%;
+                }
+                .footer-estilo p{
+                    font-size: small;
+                    color: beige;
+                    font-family: 'Poppins', sans-serif;
+                    text-align: center;
+                }
+                .footer-estilo h3{
+                    color: beige;
+                    font-size: 12px;
+                    font-family: 'Poppins', sans-serif;
+                }
 }
-
