@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*fuentes
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;*/
+/*aqui empieza el header*/
+.header-div{
+    background-image: url("../assets/img/muro_escalar2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 7.5rem;
+    }
+.header-div h1{
+    font-family: 'Poppins', sans-serif;
+    color: darkturquoise;
+}
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    list-style: none;
+    gap: 20px;
+    height: 4.375rem;
+    padding-right: 2.5rem;
+}
+.navbar li a{
+   text-decoration: none;
+   color: darkturquoise;
+   font-size: 1.1875rem;
+   list-style: none;
+   font-family: 'Poppins', sans-serif;
+   font-size: 18px;
+   font-weight: bolder;
+}
+/*aqui empieza el main*/
+.section{
+    padding: 5rem 0 5rem 0;
+}
+.section_div{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: .5625rem;
+    width: 18.75rem;
+    height: 25rem;
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2);
+}
+.cards img{
+    border-radius: 10px;
+    width: 300px;
+    height: 12.5rem;
+}
+.cards h2{
+    font-size: xx-large;
+    color: orangered;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
+.cards p{
+    font-family: 'Poppins', sans-serif;
+    color: darkturquoise;
+    text-align: justify;
+}
+/*pagina clases*/
+.grid-main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+}
+.div-formulario{
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    justify-content: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: orangered;
+    background: rgba(0,0,0,0.2);
+}
+.formulario-row{
+    display: flex;
+    align-items: center;
+    gap: .625rem;
+    margin-top: 1.25rem;
+}
+.formulario-row1{
+    margin-top: 1.25rem;
+    display: flex;
+    flex-direction: column;
+}
+.formulario-row1 textarea{
+    margin-top: .625rem;
+}
+.boton{
+    margin-top: .9375rem;
+    align-self: center;
+    width: 100px;
+}
+.estilo-clases1{
+    display: flex;
+    flex-direction: column;
+    height: 18.75rem;
+    width: 18.75rem;
+    margin-top: .9375rem;
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2);
+    margin-left: 1.875rem;
+    margin-bottom: 1.25rem;
+}
+.estilo-clases1 h2{
+    text-align: center;
+    font-size: 25px;
+    color: orangered;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.estilo-clases1 p{
+    font-size: 18px;
+    color: darkturquoise;
+    font-family: 'Poppins', sans-serif;
+    text-align:left;
+    text-align: justify;
+}
+/*aqui es el footer*/
+footer{
+    background-color: orangered;
+    width: 100%;
+    height: 9.375rem;
+}
+.footer-estilo h2{
+    width: 100%;
+    align-self: end;
+    color: beige;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    width: 100%;
+}
+.footer-estilo p{
+    font-size: 20px;
+    color: beige;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.footer-estilo h3{
+    color: beige;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+.div-footer{
+    width: 100%;
+    display: flex;
+    gap: 1.25rem;
+}
+.div-footer p{
+    display: inline;
+    align-items: center;
+}
+/*aqui termina el footer*/
+/*imagenes de la galeria*/
+.medidas-imagenes{
+    width: 100%;
+}
+.imagenes-grid{
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-gap: 1.25rem;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+.imagen1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.imagen2{
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.imagen3{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.imagen4{
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.imagen5{
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.medidas-imagenes div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+/*aqui termina la galeria*/
+/*aqui empieza el reglamento*/
+.reglamento{
+    padding: 50px 0 50px 0;
+}
+.lista-ordenada h2{
+    color: orangered;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.lista-ordenada li{
+    color: darkturquoise;
+    font-family: 'Poppins', sans-serif;
+    list-style-type: decimal;
+    margin-left: 30px;
+}
+/*aqui termina el reglamento*/
+/*aquie empieza la tienda*/
+.main-tienda div h2{
+    text-align: center;
+    color: orangered;
+    font-family: 'Poppins', sans-serif;
+}
+.imagenes-tienda{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    gap: 1.25rem;
+    width: 100%;
+}
+.card-tienda{
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2);
+    width: 18.75rem;
+    height: 25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border-radius: 10px;
+    text-align: center;
+}
+.card-tienda img{
+    border-radius: 10px;
+}
+.imagenes-tienda div img{
+    width: 300px;
+    height: 250px;
+    top: 5px;
+}
+.imagenes-tienda div p{
+    color: orangered;
+    font-size: 15px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    margin-bottom: .625rem;
+}
+
+
+
+
+
+
+
+
+/*Final de cada codigo*/
+@media (max-width:1024px){
+    .header-div{
+        background-image: url("../assets/img/muro_escalar2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 7.5rem;
+        }
+        .header-div h1
+        .navbar{
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            list-style: none;
+            gap: 20px;
+            height: 4.375rem;
+        }
+        .navbar li a{
+            color: #021859;
+        }
+
+}
+@media (max-width: 768px){
+    .header-div{
+        background-image: url("../assets/img/muro_escalar2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 7.5rem;
+        }
+        .header-div h1{
+            text-align: center;
+        }
+        .navbar{
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            list-style: none;
+            gap: 20px;
+            height: 4.375rem;
+        }
+        .navbar li a{
+            color: #021859;
+        }
+        @media (max-width: 320px){
+            .header-div{
+                background-image: url("../assets/img/muro_escalar2.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                height: 7.5rem;
+                }
+                .header-div h1{
+                    text-align: center;
+                }
+                .navbar{
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    list-style: none;
+                    gap: 8px;
+                    height: 4.375rem;
+                }
+                .navbar li a{
+                    color: #021859;
+                    font-size: small;
+                }
+}
+
