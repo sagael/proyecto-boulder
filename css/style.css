@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto+Condensed:ital,wght@1,300&display=swap');
-*{margin: 0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -7,19 +8,19 @@
 font-family: 'Poppins', sans-serif;
 font-family: 'Roboto Condensed', sans-serif;*/
 /*aqui empieza el header*/
-.header-div{
+.header-div {
     background-image: url("../assets/img/muro_escalar2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     width: 100%;
     height: 7.5rem;
-    }
-.header-div h1{
+}
+.header-div h1 {
     font-family: 'Poppins', sans-serif;
     color: darkturquoise;
 }
-.navbar{
+.navbar {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
@@ -28,116 +29,118 @@ font-family: 'Roboto Condensed', sans-serif;*/
     height: 4.375rem;
     padding-right: 2.5rem;
 }
-.navbar li a{
-   text-decoration: none;
-   color: darkturquoise;
-   font-size: 1.1875rem;
-   list-style: none;
-   font-family: 'Poppins', sans-serif;
-   font-size: 18px;
-   font-weight: bolder;
+.navbar li a {
+    text-decoration: none;
+    color: darkturquoise;
+    font-size: 1.1875rem;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
 }
-/*aqui empieza el main*/
-.section{
+/*aqui empieza el main del index*/
+.section {
     padding: 5rem 0 5rem 0;
 }
-.section_div{
+.section_div {
     display: flex;
     justify-content: space-around;
     font-family: 'Poppins', sans-serif;
     width: 100%;
     height: 100%;
 }
-.cards{
+.cards {
     display: flex;
     flex-direction: column;
     justify-content: center;
     border-radius: .5625rem;
     width: 18.75rem;
     height: 25rem;
-    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
 }
-.cards img{
+.cards img {
     border-radius: 10px;
     width: 300px;
     height: 12.5rem;
 }
-.cards h2{
+.cards h2 {
     font-size: xx-large;
     color: orangered;
     font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
 }
-.cards p{
+.cards p {
     font-family: 'Poppins', sans-serif;
     color: darkturquoise;
     text-align: justify;
 }
-/*pagina clases*/
-.grid-main{
+/*aqui termina el main del index*/
+/* aqui empieza la pagina clases*/
+.grid-main {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-top: 30px;
 }
-.div-formulario{
+.div-formulario {
     display: flex;
     flex-direction: column;
     align-self: start;
     justify-content: center;
     font-family: 'Roboto Condensed', sans-serif;
     color: orangered;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0, 0, 0, 0.2);
 }
-.formulario-row{
+.formulario-row {
     display: flex;
     align-items: center;
     gap: .625rem;
     margin-top: 1.25rem;
 }
-.formulario-row1{
+.formulario-row1 {
     margin-top: 1.25rem;
     display: flex;
     flex-direction: column;
 }
-.formulario-row1 textarea{
+.formulario-row1 textarea {
     margin-top: .625rem;
 }
-.boton{
+.boton {
     margin-top: .9375rem;
     align-self: center;
     width: 100px;
 }
-.estilo-clases1{
+.estilo-clases1 {
     display: flex;
     flex-direction: column;
     height: 18.75rem;
     width: 18.75rem;
     margin-top: .9375rem;
-    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
     margin-left: 1.875rem;
     margin-bottom: 1.25rem;
 }
-.estilo-clases1 h2{
+.estilo-clases1 h2 {
     text-align: center;
     font-size: 25px;
     color: orangered;
     font-family: 'Roboto Condensed', sans-serif;
 }
-.estilo-clases1 p{
+.estilo-clases1 p {
     font-size: 18px;
     color: darkturquoise;
     font-family: 'Poppins', sans-serif;
-    text-align:left;
+    text-align: left;
     text-align: justify;
 }
+/*aqui termina la pagina clases*/
 /*aqui es el footer*/
-footer{
+footer {
     background-color: orangered;
     width: 100%;
     height: 9.375rem;
 }
-.footer-estilo h2{
+.footer-estilo h2 {
     width: 100%;
     align-self: end;
     color: beige;
@@ -146,32 +149,38 @@ footer{
     text-align: center;
     width: 100%;
 }
-.footer-estilo p{
+.footer-estilo p {
     font-size: 20px;
     color: beige;
     font-family: 'Poppins', sans-serif;
     text-align: center;
 }
-.footer-estilo h3{
+.footer-estilo h3 {
     color: beige;
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
 }
-.div-footer{
+.div-footer {
     width: 100%;
     display: flex;
     gap: 1.25rem;
 }
-.div-footer p{
+.div-footer p {
     display: inline;
     align-items: center;
 }
+.iconos {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    gap: .9375rem;
+}
 /*aqui termina el footer*/
 /*imagenes de la galeria*/
-.medidas-imagenes{
+.medidas-imagenes {
     width: 100%;
 }
-.imagenes-grid{
+.imagenes-grid {
     width: 100%;
     padding: 20px;
     display: grid;
@@ -179,37 +188,37 @@ footer{
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4, 1fr);
 }
-.imagen1{
+.imagen1 {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
 }
-.imagen2{
+.imagen2 {
     grid-column-start: 3;
     grid-column-end: 7;
     grid-row-start: 1;
     grid-row-end: 2;
 }
-.imagen3{
+.imagen3 {
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 4;
 }
-.imagen4{
+.imagen4 {
     grid-column-start: 4;
     grid-column-end: 6;
     grid-row-start: 2;
     grid-row-end: 4;
 }
-.imagen5{
+.imagen5 {
     grid-column-start: 2;
     grid-column-end: 6;
     grid-row-start: 4;
     grid-row-end: 5;
 }
-.medidas-imagenes div img{
+.medidas-imagenes div img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
@@ -217,14 +226,14 @@ footer{
 }
 /*aqui termina la galeria*/
 /*aqui empieza el reglamento*/
-.reglamento{
+.reglamento {
     padding: 50px 0 50px 0;
 }
-.lista-ordenada h2{
+.lista-ordenada h2 {
     color: orangered;
     font-family: 'Roboto Condensed', sans-serif;
 }
-.lista-ordenada li{
+.lista-ordenada li {
     color: darkturquoise;
     font-family: 'Poppins', sans-serif;
     list-style-type: decimal;
@@ -232,12 +241,12 @@ footer{
 }
 /*aqui termina el reglamento*/
 /*aquie empieza la tienda*/
-.main-tienda div h2{
+.main-tienda div h2 {
     text-align: center;
     color: orangered;
     font-family: 'Poppins', sans-serif;
 }
-.imagenes-tienda{
+.imagenes-tienda {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -245,8 +254,8 @@ footer{
     gap: 1.25rem;
     width: 100%;
 }
-.card-tienda{
-    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2);
+.card-tienda {
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
     width: 18.75rem;
     height: 25rem;
     margin-top: 1.25rem;
@@ -254,15 +263,15 @@ footer{
     border-radius: 10px;
     text-align: center;
 }
-.card-tienda img{
+.card-tienda img {
     border-radius: 10px;
 }
-.imagenes-tienda div img{
+.imagenes-tienda div img {
     width: 300px;
     height: 250px;
     top: 5px;
 }
-.imagenes-tienda div p{
+.imagenes-tienda div p {
     color: orangered;
     font-size: 15px;
     font-family: 'Roboto Condensed', sans-serif;
@@ -278,121 +287,249 @@ footer{
 
 
 /*Final de cada codigo*/
-@media (max-width:1024px){
-    .header-div{
+@media (max-width:1024px) {
+    .header-div {
         background-image: url("../assets/img/muro_escalar2.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
         height: 7.5rem;
+    }
+    .header-div h1 .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        list-style: none;
+        gap: 20px;
+        height: 4.375rem;
+    }
+    .navbar li a {
+        color: #021859;
+    }
+    /*aqui empieza el main del index*/
+    .section {
+        padding: 2rem 0;
+    }
+    .section_div {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .cards {
+        width: 45%;
+        max-width: 18.75rem;
+        height: auto;
+        margin: 1rem;
+    }
+    .cards h2 {
+        font-size: large;
+        margin: 1rem 0;
+    }
+      /*aqui termina el main del index*/
+      /*aqui empieza el media query footer*/
+    footer {
+        background-color: orangered;
+        width: 100%;
+        height: 9.375rem;
+    }
+    .footer-estilo h2 {
+        width: 100%;
+        align-self: end;
+        color: beige;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        width: 100%;
+    }
+    .footer-estilo p {
+        font-size: 20px;
+        color: beige;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+    }
+    .footer-estilo h3 {
+        color: beige;
+        font-size: 18px;
+        font-family: 'Poppins', sans-serif;
+    }
+    /*aqui termina el media query del footer*/
+}
+@media (max-width: 768px) {
+    .header-div {
+        background-image: url("../assets/img/muro_escalar2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 7.5rem;
+    }
+    .header-div h1 {
+        text-align: center;
+    }
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        list-style: none;
+        gap: 20px;
+        height: 4.375rem;
+    }
+    .navbar li a {
+        color: #021859;
+    }
+    /*aqui inicia el main del index*/
+    .section {
+        padding: 2rem 0;
+    }
+    .section_div {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cards {
+        width: 100%;
+        max-width: 18.75rem;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+    .cards img {
+        height: auto;
+    }  
+    .cards h2 {
+        font-size: large;
+        margin: 1rem 0;
+    }
+    .cards p {
+        margin: 0.5rem;
+    }
+    }
+@media (max-width: 320px) {
+        /*aqui inicia el media query del header*/
+        .header-div {
+            background-image: url("../assets/img/muro_escalar2.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            height: 7.5rem;
         }
-        .header-div h1
-        .navbar{
+        .header-div h1 {
+            text-align: center;
+        }
+        .navbar {
             display: flex;
             justify-content: center;
             align-items: flex-end;
             list-style: none;
-            gap: 20px;
+            gap: 8px;
             height: 4.375rem;
         }
-        .navbar li a{
+        .navbar li a {
             color: #021859;
+            font-size: small;
         }
-        footer{
+        /*aqui finaliza media query del header*/
+        /*aqui inicia el main del index*/
+        .section {
+            padding: 2rem 0;
+        }
+        .section_div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            height: auto;
+        }
+        .cards {
+            border-radius: .5625rem;
+            width: 100%;
+            max-width: 18.75rem;
+            height: auto;
+            box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+            margin-bottom: 2rem;
+        }
+        .cards img {
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+        }
+        .cards h2 {
+            font-size: large;
+            color: orangered;
+            font-family: 'Roboto Condensed', sans-serif;
+            text-align: center;
+            margin: 1rem 0;
+        }
+        .cards p {
+            font-family: 'Poppins', sans-serif;
+            color: darkturquoise;
+            text-align: justify;
+            margin: 0.5rem;
+        }
+        /*aqui inicia el media query del footer*/
+        footer {
             background-color: orangered;
             width: 100%;
             height: 9.375rem;
         }
-        .footer-estilo h2{
+        .footer-div h3 {
             width: 100%;
-            align-self: end;
+            text-align: center;
+            font-size:small;
+        }
+        .div-footer 
+        .footer-estilo h2 {
+            width: 100%;
+            align-self: center;
             color: beige;
             font-size: 20px;
             font-family: 'Poppins', sans-serif;
             text-align: center;
             width: 100%;
         }
-        .footer-estilo p{
-            font-size: 20px;
+        .footer-estilo p {
+            font-size: small;
             color: beige;
             font-family: 'Poppins', sans-serif;
             text-align: center;
         }
-        .footer-estilo h3{
+        .footer-estilo h3 {
             color: beige;
-            font-size: 18px;
+            font-size: 12px;
             font-family: 'Poppins', sans-serif;
         }
+    }
+    /*aqui termina el media query del footer*/
+    /*aqui empieza el media query de la pagina clase*/
+@media (max-width: 1024px) {
+        .grid-main {
+        grid-template-columns: repeat(2, 1fr);
+        }
+        .estilo-clases1 {
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+        }
+    }
+@media (max-width: 768px) {
+        .grid-main {
+        grid-template-columns: 1fr;
+        }
+        
+        .estilo-clases1 {
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+        width: auto;
+        }
+        
+        .div-formulario {
+        align-self: center;
+        margin-top: 1.875rem;
+        }
+    }
 
-}
-@media (max-width: 768px){
-    .header-div{
-        background-image: url("../assets/img/muro_escalar2.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        height: 7.5rem;
+    @media (max-width: 320px) {
+        .estilo-clases1 {
+        margin-left: .9375rem;
+        margin-right: .9375rem;
         }
-        .header-div h1{
-            text-align: center;
+        .div-formulario {
+        margin-top: 1.875rem;
         }
-        .navbar{
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            list-style: none;
-            gap: 20px;
-            height: 4.375rem;
-        }
-        .navbar li a{
-            color: #021859;
-        }
-        @media (max-width: 320px){
-            .header-div{
-                background-image: url("../assets/img/muro_escalar2.jpg");
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center center;
-                height: 7.5rem;
-                }
-                .header-div h1{
-                    text-align: center;
-                }
-                .navbar{
-                    display: flex;
-                    justify-content: center;
-                    align-items: flex-end;
-                    list-style: none;
-                    gap: 8px;
-                    height: 4.375rem;
-                }
-                .navbar li a{
-                    color: #021859;
-                    font-size: small;
-                }
-                footer{
-                    background-color: orangered;
-                    width: 100%;
-                    height: 9.375rem;
-                }
-                .footer-estilo h2{
-                    width: 100%;
-                    align-self: center;
-                    color: beige;
-                    font-size: 20px;
-                    font-family: 'Poppins', sans-serif;
-                    text-align: center;
-                    width: 100%;
-                }
-                .footer-estilo p{
-                    font-size: small;
-                    color: beige;
-                    font-family: 'Poppins', sans-serif;
-                    text-align: center;
-                }
-                .footer-estilo h3{
-                    color: beige;
-                    font-size: 12px;
-                    font-family: 'Poppins', sans-serif;
-                }
-}
+    }
+    /*aqui termina el media query de la pagina clase*/
