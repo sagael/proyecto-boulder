@@ -1,0 +1,16 @@
+.reglamento{
+    padding: 50px 0 50px 0;
+}
+.lista-ordenada{
+    h2{
+        font-family: $fuente-titulos;
+        color: $color-text;
+    }
+    li{
+        color:$color-parrafo;
+        font-family: $fuente-parrafo;
+        margin-left: 30px;
+        
+
+    }
+}

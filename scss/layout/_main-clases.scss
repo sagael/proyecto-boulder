@@ -1,0 +1,89 @@
+.grid-main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.estilo-clases1{
+    display: flex;
+    flex-direction: column;
+    height: 18.75rem;
+    width: 18.75rem;
+    padding: 20px 0 20px 30px;
+   h2{
+    color: $color-text;
+    text-align: center;
+    font-family: $fuente-titulos;
+   }
+   p{
+    color: $color-parrafo;
+    text-align: justify;
+    font-family: $fuente-parrafo;
+   }
+}
+.contactanos h2{
+    color: $color-text;
+    font-family: $fuente-titulos;
+    text-align: center;
+}
+.contactanos p{
+        color: $color-parrafo;
+        font-family: $fuente-parrafo;
+        text-align: center;
+}.div-formulario{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $fuente-titulos;
+    color: $color-text;
+    padding: 10px 0 10px 0;
+    input{
+        height: 1.875rem;
+        background-color: rgba(177, 165, 165, 0.071);
+        width: 300px;
+        border-radius: 10px;
+        border-color: rgba(177, 165, 165, 0.071);
+        gap: 1.25rem;
+    }
+}
+.formulario-row{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 20px 0;
+}
+.formulario-row1{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 10px 0 10px 0;
+    textarea{
+        border-radius: 10px;
+        background-color: rgba(177, 165, 165, 0.071);
+        border-color: rgba(177, 165, 165, 0.071);
+    }
+}
+.boton{
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background-color: orangered;
+    box-shadow: 0 3px 1px -2px #ccc, 0 2px 2px 0 #ccc, 0 1px 5px 0 #ccc;
+    &:active{
+        box-shadow: 0 4px 2px -3px #ccc, 0 4px 5px 1px #ccc, 0 2px 7px 1px #ccc;
+    }
+}
+.mapa{
+    grid-column: 3;
+    width: 100%;
+    height: 350px;
+    padding: 20px 30px 0 30px;
+}
