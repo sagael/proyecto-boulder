@@ -1,0 +1,44 @@
+main{
+    div{
+        h2{
+            text-align: center;
+            color: $color-text;
+            font-family: $fuente-titulos;
+        }
+    }
+}
+.card-tienda {
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 18.75rem;
+    height: 25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border-radius: 10px;
+    text-align: center;
+    button{
+        @extend .boton
+    }
+}
+.imagenes-tienda{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    gap: 1.25rem;
+    width: 100%;
+    div{
+        img{
+            width: 300px;
+            height: 250px;
+            top: 5px;
+            border-radius: 10px;
+        }
+        p{
+            color: $color-text;
+            font-size: 15px;
+            font-family: $fuente-titulos;
+            text-align: center;
+            margin-bottom: .625rem;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+@mixin input{
+    background-color: rgba(177, 165, 165, 0.07);
+    border-color: rgba(177, 165, 165, 0.071);
+    border-radius: 10px;
+}
+

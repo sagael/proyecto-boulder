@@ -1,36 +1,39 @@
-/*footer{
+footer{
     background-color: $background-footer;
     width: 100%;
     height: 7.5rem;
-}*/
+}
+.footer-estilo{
+    width: 100%;
+    height: 100%;
+}
 .footer-div{
     text-align: center;
     h2{
         font-family: $fuente-titulos;
-        color: $color-parrafo;
+        color: $color-text-footer;
     }
     p{
         font-family: $fuente-parrafo;
-        color: $color-parrafo;
+        color: $color-text-footer;
         font-size: large;
     }
 }
 .div-footer{
+    height: auto;
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 1.25rem;
 
     div{
-        width: 100%;
         p{
             font-family: $fuente-parrafo;
-            color: $color-parrafo;
+            color: $color-text-footer;
             display: inline;
-            align-self: flex-start;
         }
     }
 }
 .iconos{
-    display: flex;
-    justify-content: flex-end;
-    gap: .9375rem;
+    gap: 1.25rem;
 }

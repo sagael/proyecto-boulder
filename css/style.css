@@ -17,8 +17,7 @@ nav {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-  height: 80px;
-  margin-left: 2.5rem; }
+  height: 80px; }
 
 .navbar {
   display: flex;
@@ -27,11 +26,9 @@ nav {
   list-style: none;
   gap: 20px;
   height: 45px;
-  width: 350px;
-  padding-right: 2.5rem;
+  width: 100%;
   background-color: rgba(255, 255, 255, 0.742);
-  border-radius: 20px;
-  padding: 10px 10px 10px 10px; }
+  border-radius: 20px; }
   .navbar li:hover {
     color: black;
     text-shadow: 2px 5px 5px #181818; }
@@ -76,36 +73,38 @@ section {
     font-family: "Poppins", sans-serif;
     padding: 0 .9375rem .625rem .9375rem; }
 
-/*footer{
-    background-color: $background-footer;
-    width: 100%;
-    height: 7.5rem;
-}*/
+footer {
+  background-color: orangered;
+  width: 100%;
+  height: 7.5rem; }
+
+.footer-estilo {
+  width: 100%;
+  height: 100%; }
+
 .footer-div {
   text-align: center; }
   .footer-div h2 {
     font-family: "Roboto Condensed", sans-serif;
-    color: darkturquoise; }
+    color: beige; }
   .footer-div p {
     font-family: "Poppins", sans-serif;
-    color: darkturquoise;
+    color: beige;
     font-size: large; }
 
 .div-footer {
+  height: auto;
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 1.25rem; }
-  .div-footer div {
-    width: 100%; }
-    .div-footer div p {
-      font-family: "Poppins", sans-serif;
-      color: darkturquoise;
-      display: inline;
-      align-self: flex-start; }
+  .div-footer div p {
+    font-family: "Poppins", sans-serif;
+    color: beige;
+    display: inline; }
 
 .iconos {
-  display: flex;
-  justify-content: flex-end;
-  gap: .9375rem; }
+  gap: 1.25rem; }
 
 .reglamento {
   padding: 50px 0 50px 0; }
@@ -159,11 +158,11 @@ section {
   padding: 10px 0 10px 0; }
   .div-formulario input {
     height: 1.875rem;
-    background-color: rgba(177, 165, 165, 0.071);
     width: 300px;
-    border-radius: 10px;
+    gap: 1.25rem;
+    background-color: rgba(177, 165, 165, 0.07);
     border-color: rgba(177, 165, 165, 0.071);
-    gap: 1.25rem; }
+    border-radius: 10px; }
 
 .formulario-row {
   display: flex;
@@ -176,11 +175,11 @@ section {
   width: 300px;
   padding: 10px 0 10px 0; }
   .formulario-row1 textarea {
-    border-radius: 10px;
-    background-color: rgba(177, 165, 165, 0.071);
-    border-color: rgba(177, 165, 165, 0.071); }
+    background-color: rgba(177, 165, 165, 0.07);
+    border-color: rgba(177, 165, 165, 0.071);
+    border-radius: 10px; }
 
-.boton {
+.boton, .card-tienda button {
   min-width: 130px;
   height: 40px;
   color: #fff;
@@ -195,7 +194,7 @@ section {
   border: none;
   background-color: orangered;
   box-shadow: 0 3px 1px -2px #ccc, 0 2px 2px 0 #ccc, 0 1px 5px 0 #ccc; }
-  .boton:active {
+  .boton:active, .card-tienda button:active {
     box-shadow: 0 4px 2px -3px #ccc, 0 4px 5px 1px #ccc, 0 2px 7px 1px #ccc; }
 
 .mapa {
@@ -203,6 +202,144 @@ section {
   width: 100%;
   height: 350px;
   padding: 20px 30px 0 30px; }
+
+main {
+  width: 100%;
+  height: 100%; }
+  main .imagenes-grid {
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-gap: 1.25rem;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr); }
+    main .imagenes-grid img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      object-fit: cover; }
+
+.imagen1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2; }
+
+.imagen2 {
+  grid-column-start: 3;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2; }
+
+.imagen3 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4; }
+
+.imagen4 {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 4; }
+
+.imagen5 {
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 5; }
+
+main div h2 {
+  text-align: center;
+  color: orangered;
+  font-family: "Roboto Condensed", sans-serif; }
+
+.card-tienda {
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 18.75rem;
+  height: 25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-radius: 10px;
+  text-align: center; }
+
+.imagenes-tienda {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  gap: 1.25rem;
+  width: 100%; }
+  .imagenes-tienda div img {
+    width: 300px;
+    height: 250px;
+    top: 5px;
+    border-radius: 10px; }
+  .imagenes-tienda div p {
+    color: orangered;
+    font-size: 15px;
+    font-family: "Roboto Condensed", sans-serif;
+    text-align: center;
+    margin-bottom: .625rem; }
+
+@media (max-width: 1024px) {
+  main {
+    padding: 1rem; }
+  section {
+    width: 100%;
+    height: 100%; }
+    section div {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      justify-items: center;
+      gap: 1.25rem; } }
+
+@media (max-width: 768px) {
+  .grid-main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px; } }
+
+.imagenes-tienda {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 0.5rem; }
+
+@media (max-width: 320px) {
+  section div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 0.5rem; }
+  .cards {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2); }
+  .cards img {
+    width: 100%;
+    height: auto; } }
+
+.footer-div {
+  font-size: 12px; }
+  .footer-div p {
+    font-size: 10px; }
+
+.div-footer {
+  font-size: 10px; }
+
+.grid-main {
+  margin: 20px 0 20px 0; }
+
+.imagenes-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 1fr); }
 
 header {
   background-image: url("../assets/img/muro_escalar2.jpg");
@@ -213,6 +350,4 @@ header {
   height: 7.5rem; }
 
 footer {
-  width: 100%;
-  height: 7.5rem;
-  background-image: url("../assets/img/wave.svg"); }
+  background-image: url("../assets/img/wave_2.svg"); }

@@ -39,11 +39,9 @@
     padding: 10px 0 10px 0;
     input{
         height: 1.875rem;
-        background-color: rgba(177, 165, 165, 0.071);
         width: 300px;
-        border-radius: 10px;
-        border-color: rgba(177, 165, 165, 0.071);
         gap: 1.25rem;
+        @include input;
     }
 }
 .formulario-row{
@@ -57,9 +55,7 @@
     width: 300px;
     padding: 10px 0 10px 0;
     textarea{
-        border-radius: 10px;
-        background-color: rgba(177, 165, 165, 0.071);
-        border-color: rgba(177, 165, 165, 0.071);
+      @include input;
     }
 }
 .boton{
