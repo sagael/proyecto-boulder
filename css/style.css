@@ -6,8 +6,15 @@ font-family: 'Roboto Condensed', sans-serif;*/
   padding: 0;
   box-sizing: border-box; }
 
-header a {
-  text-decoration: none; }
+header {
+  background-image: url("../assets/img/muro_escalar2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 7.5rem; }
+  header a {
+    text-decoration: none; }
 
 h1 {
   color: darkturquoise;
@@ -74,6 +81,7 @@ section {
     padding: 0 .9375rem .625rem .9375rem; }
 
 footer {
+  background-image: url("../assets/img/wave_2.svg");
   background-color: orangered;
   width: 100%;
   height: 7.5rem; }
@@ -266,7 +274,6 @@ main div h2 {
 .imagenes-tienda {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   justify-items: center;
   gap: 1.25rem;
   width: 100%; }
@@ -296,20 +303,21 @@ main div h2 {
       gap: 1.25rem; } }
 
 @media (max-width: 768px) {
-  .grid-main {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px; } }
+  /*.grid-main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px
+    }*/ }
 
-.imagenes-tienda {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  gap: 0.5rem; }
-
+/*.imagenes-tienda {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 0.5rem;
+}*/
 @media (max-width: 320px) {
   section div {
     display: grid;
@@ -320,7 +328,9 @@ main div h2 {
     width: 100%;
     height: auto;
     margin-bottom: 1rem;
-    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap; }
   .cards img {
     width: 100%;
     height: auto; } }
@@ -331,23 +341,14 @@ main div h2 {
     font-size: 10px; }
 
 .div-footer {
-  font-size: 10px; }
+  font-size: 12px; }
 
-.grid-main {
-  margin: 20px 0 20px 0; }
+/*.grid-main {
+    margin: 20px 0 20px 0;
+}
 
 .imagenes-grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(3, 1fr); }
-
-header {
-  background-image: url("../assets/img/muro_escalar2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  width: 100%;
-  height: 7.5rem; }
-
-footer {
-  background-image: url("../assets/img/wave_2.svg"); }
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}*/

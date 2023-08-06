@@ -8,15 +8,6 @@
 @import "./layout/main-clases";
 @import "./layout/galeria";
 @import "./layout/main-tienda";
-@import "./layout/media-queries";
-header{
-    background-image: url("../assets/img/muro_escalar2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: 100%;
-    height: 7.5rem;
-}
-footer{
-    background-image: url("../assets/img/wave_2.svg");
-}
+@import "./layout/media1024";
+@import "./layout/media768";
+@import "./layout/media320";
