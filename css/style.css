@@ -303,9 +303,6 @@ main div h2 {
       gap: 1.25rem; } }
 
 @media (max-width: 768px) {
-  section {
-    display: flex;
-    flex-wrap: wrap; }
   .grid-main {
     width: 100%;
     display: flex;
