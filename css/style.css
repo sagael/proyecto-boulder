@@ -318,10 +318,8 @@ main div h2 {
 
 @media (max-width: 320px) {
   section div {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    gap: 0.5rem; }
+    display: flex;
+    flex-wrap: wrap; }
   .cards {
     width: 100%;
     height: auto;
