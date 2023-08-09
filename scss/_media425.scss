@@ -1,8 +1,8 @@
 @media (max-width:425px) {
-    section {
-        div {
-            display:flex;
-            flex-wrap: ;
+    section{
+        div{
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
     }
 }
 }
